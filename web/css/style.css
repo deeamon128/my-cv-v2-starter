@@ -2,6 +2,10 @@
 
 @import 'font.css';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
   margin: 0 36px;
@@ -13,9 +17,32 @@ grid {
   grid-gap: 10px;
 }
 
-grid > c {
+grid > c[span="row"] {
   grid-column: 1;
   grid-column-end: -1;
+}
+
+grid > c {
+  overflow: hidden;
+}
+
+c[span="1"] {
+  grid-column-end: span 1;
+}
+
+a[class^="disc-link__"] {
+width: 100%;
+padding-top: 100%;
+border-radius: 50%;
+display: block;
+}
+
+.disc-link__onahau {
+  background-color: #CCE4FF;
+}
+
+.disc-link__granny-apple {
+  background-color: #D4F5E2;
 }
 
 .main-title {
@@ -81,4 +108,16 @@ c[height="30"] {
 
 .text-centered {
   text-align: center;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+
+.image-wrapper {
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid #808080;
 }
