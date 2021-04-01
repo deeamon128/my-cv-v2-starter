@@ -162,6 +162,7 @@ a[class^="disc-link__"] > [class^="my-cv-"]::before {
   padding-left: 0px;
   border-radius: 15px;
   overflow: hidden;
+  margin: 20px 0;
 }
 
 .skills-legend-item:not(:last-child) {
@@ -171,6 +172,15 @@ a[class^="disc-link__"] > [class^="my-cv-"]::before {
 .skills-legend-item:hover {
   background-color: #FAFAFA;
 }
+
+.skills-legend-item > span[class^="my-cv-"] {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .skills-legend-item {
   color: #999999;
@@ -182,7 +192,12 @@ a[class^="disc-link__"] > [class^="my-cv-"]::before {
 }
 
 .legend-count {
-  padding: 0;
+  padding-right: 20px;
+}
+
+.legend-description {
+  padding: 0 10px;
+  flex-grow: 1;
 }
 
 c[height="30"] {
