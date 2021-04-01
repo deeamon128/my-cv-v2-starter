@@ -177,6 +177,12 @@ a[class^="disc-link__"] > [class^="my-cv-"]::before {
   height: 52px;
   line-height: 52px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.legend-count {
+  padding: 0;
 }
 
 c[height="30"] {
