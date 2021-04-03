@@ -19,9 +19,6 @@ grid > c[span="row"] {
   grid-column-end: -1;
 }
 
-grid > c {
-  /* overflow: hidden; */
-}
 
 c[span="1"] {
   grid-column-end: span 1;
@@ -101,7 +98,7 @@ a[class^="disc-link__"] > [class^="my-cv-"]::before {
   margin: 0;
 }
 
-.main-title, {
+.main-title {
   height: 40px;
   font-size: 36px;
 }
